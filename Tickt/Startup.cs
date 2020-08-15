@@ -36,6 +36,8 @@ namespace Tickt
 
             services.AddControllersWithViews();
 
+            
+
             #region Repository
 
             // Scoped - cria uma instancia por requisi��o dentro do escopo

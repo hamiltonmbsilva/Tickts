@@ -20,7 +20,7 @@ namespace Domain.Models
 
         [Required, Column("data_cadastro")]
         [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}")]
-        public DateTime DataCadastro { get; set; }
+        public DateTime DataCadastro { get; set; }        
 
         [Required, Column("status")]
         public EnumStatus Status { get; set; }
