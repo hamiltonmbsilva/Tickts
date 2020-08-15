@@ -1,0 +1,9 @@
+F:\Projeto Tickst\Tickts\Repository\obj\Debug\netstandard2.0\Repository.csprojAssemblyReference.cache
+F:\Projeto Tickst\Tickts\Repository\obj\Debug\netstandard2.0\Repository.AssemblyInfoInputs.cache
+F:\Projeto Tickst\Tickts\Repository\obj\Debug\netstandard2.0\Repository.AssemblyInfo.cs
+F:\Projeto Tickst\Tickts\Repository\obj\Debug\netstandard2.0\Repository.csproj.CoreCompileInputs.cache
+F:\Projeto Tickst\Tickts\Repository\bin\Debug\netstandard2.0\Repository.deps.json
+F:\Projeto Tickst\Tickts\Repository\bin\Debug\netstandard2.0\Repository.dll
+F:\Projeto Tickst\Tickts\Repository\bin\Debug\netstandard2.0\Domain.dll
+F:\Projeto Tickst\Tickts\Repository\bin\Debug\netstandard2.0\Domain.pdb
+F:\Projeto Tickst\Tickts\Repository\obj\Debug\netstandard2.0\Repository.csproj.CopyComplete

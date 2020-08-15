@@ -1,0 +1,6 @@
+F:\Projeto Tickst\Tickts\Service\obj\Debug\netstandard2.0\Service.csprojAssemblyReference.cache
+F:\Projeto Tickst\Tickts\Service\obj\Debug\netstandard2.0\Service.AssemblyInfoInputs.cache
+F:\Projeto Tickst\Tickts\Service\obj\Debug\netstandard2.0\Service.AssemblyInfo.cs
+F:\Projeto Tickst\Tickts\Service\obj\Debug\netstandard2.0\Service.csproj.CoreCompileInputs.cache
+F:\Projeto Tickst\Tickts\Service\bin\Debug\netstandard2.0\Domain.dll
+F:\Projeto Tickst\Tickts\Service\bin\Debug\netstandard2.0\Repository.dll
