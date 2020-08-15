@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Repository.Context;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Tickts.Repository.Context;
 
-namespace Tickts.Repository
+namespace Repository
 {
     public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {

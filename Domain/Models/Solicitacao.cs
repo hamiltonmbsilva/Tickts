@@ -1,20 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Domain.Enum;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Tickts.Domain.Enum;
 
-namespace Tickts.Domain.Models
+namespace Domain.Models
 {
+    [Table("solitacao")]
     public class Solicitacao
     {
         #region Propriedades
         [Key]
         [Required, Column("id")]
-        public int IdSolicitante { get; set; }
+        public int Id { get; set; }
 
-        [Required , Column("solicitante"), MaxLength(255)]
+        [Required, Column("solicitante"), MaxLength(255)]
         public string Solicitante { get; set; }
 
         [Required, Column("data_cadastro")]
@@ -37,11 +38,11 @@ namespace Tickts.Domain.Models
         public static void Map(ModelBuilder modelBuilder)
         {
             var map = modelBuilder.Entity<Solicitacao>();
-            map.HasKey(x => x.IdSolicitante);
-            map.Property(x => x.IdSolicitante).ValueGeneratedOnAdd();
+            map.HasKey(x => x.Id);
+            map.Property(x => x.Id).ValueGeneratedOnAdd();
 
             //1:N
-            map.HasMany(x => x.Andamentos).WithOne(x => x.Solicitacao).HasForeignKey(x => x.Solicitacao_Id).OnDelete(DeleteBehavior.Cascade);
+            map.HasMany(x => x.Andamentos).WithOne(x => x.Solicitacao).HasForeignKey(x => x.SolicitacaoId).OnDelete(DeleteBehavior.Cascade);
 
         }
         #endregion

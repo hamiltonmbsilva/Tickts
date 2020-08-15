@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Domain.Models;
+using Repository.Context;
 using System.Linq;
-using System.Threading.Tasks;
-using Tickts.Domain.Models;
-using Tickts.Repository.Context;
 
-namespace Tickts.Repository.EntyRepository
+namespace Repository.EntyRepository
 {
     public class SolicitacaoRepository : Repository<Solicitacao>
     {
@@ -15,7 +12,7 @@ namespace Tickts.Repository.EntyRepository
 
         public Solicitacao GetById(int id)
         {
-            return GetAll().FirstOrDefault(x => x.IdSolicitante == id);
+            return GetAll().FirstOrDefault(x => x.Id == id);
         }
     }
 }

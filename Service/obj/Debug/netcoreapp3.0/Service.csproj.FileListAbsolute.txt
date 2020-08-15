@@ -1,0 +1,14 @@
+F:\Projeto Tickst\Tickt\Tickt\Service\obj\Debug\netcoreapp3.0\Service.csprojAssemblyReference.cache
+F:\Projeto Tickst\Tickt\Tickt\Service\obj\Debug\netcoreapp3.0\Service.AssemblyInfoInputs.cache
+F:\Projeto Tickst\Tickt\Tickt\Service\obj\Debug\netcoreapp3.0\Service.AssemblyInfo.cs
+F:\Projeto Tickst\Tickt\Tickt\Service\obj\Debug\netcoreapp3.0\Service.csproj.CoreCompileInputs.cache
+F:\Projeto Tickst\Tickt\Tickt\Service\bin\Debug\netcoreapp3.0\Service.deps.json
+F:\Projeto Tickst\Tickt\Tickt\Service\bin\Debug\netcoreapp3.0\Service.dll
+F:\Projeto Tickst\Tickt\Tickt\Service\bin\Debug\netcoreapp3.0\Service.pdb
+F:\Projeto Tickst\Tickt\Tickt\Service\bin\Debug\netcoreapp3.0\Domain.dll
+F:\Projeto Tickst\Tickt\Tickt\Service\bin\Debug\netcoreapp3.0\Repository.dll
+F:\Projeto Tickst\Tickt\Tickt\Service\bin\Debug\netcoreapp3.0\Repository.pdb
+F:\Projeto Tickst\Tickt\Tickt\Service\bin\Debug\netcoreapp3.0\Domain.pdb
+F:\Projeto Tickst\Tickt\Tickt\Service\obj\Debug\netcoreapp3.0\Service.csproj.CopyComplete
+F:\Projeto Tickst\Tickt\Tickt\Service\obj\Debug\netcoreapp3.0\Service.dll
+F:\Projeto Tickst\Tickt\Tickt\Service\obj\Debug\netcoreapp3.0\Service.pdb

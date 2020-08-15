@@ -3,14 +3,15 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Tickts.Domain.Models
+namespace Domain.Models
 {
+    [Table("andamento")]
     public class Andamento
     {
         #region Propriedades
         [Key]
         [Required, Column("id")]
-        public int IdAndamento { get; set; }
+        public int Id { get; set; }
 
         [Required, Column("descricao"), MaxLength(400)]
         public string Descricao { get; set; }
@@ -21,7 +22,8 @@ namespace Tickts.Domain.Models
         #endregion
 
         #region Relacionamentos
-        public int? Solicitacao_Id { get; set; }
+        [Required, Column("Solicitacao_id")]
+        public int SolicitacaoId { get; set; }
         public Solicitacao Solicitacao { get; set; }
         #endregion
 
@@ -29,11 +31,11 @@ namespace Tickts.Domain.Models
         public static void Map(ModelBuilder modelBuilder)
         {
             var map = modelBuilder.Entity<Andamento>();
-            map.HasKey(x => x.IdAndamento);
-            map.Property(x => x.IdAndamento).ValueGeneratedOnAdd();
+            map.HasKey(x => x.Id);
+            map.Property(x => x.Id).ValueGeneratedOnAdd();
 
             //1:N
-            map.HasOne(x => x.Solicitacao).WithMany(x => x.Andamentos).HasForeignKey(x => x.Solicitacao_Id).OnDelete(DeleteBehavior.Cascade);
+            map.HasOne(x => x.Solicitacao).WithMany(x => x.Andamentos).HasForeignKey(x => x.SolicitacaoId).OnDelete(DeleteBehavior.Cascade);
         }
         #endregion
 

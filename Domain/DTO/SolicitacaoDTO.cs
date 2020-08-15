@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Tickts.Domain.Enum;
+﻿using Domain.Enum;
+using System;
 
-namespace Tickts.Domain.DTO
+namespace Domain.DTO
 {
     public class SolicitacaoListDTO
     {
         public string Solicitante { get; set; }
-
-        
         public DateTime DataCadastro { get; set; }
-
-        
         public EnumStatus Status { get; set; }
 
     }

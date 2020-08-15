@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projeto Tickst\\Tickts\\Domain\\Domain.csproj": {}
+    "F:\\Projeto Tickst\\Tickt\\Tickt\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "F:\\Projeto Tickst\\Tickts\\Domain\\Domain.csproj": {
+    "F:\\Projeto Tickst\\Tickt\\Tickt\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projeto Tickst\\Tickts\\Domain\\Domain.csproj",
+        "projectUniqueName": "F:\\Projeto Tickst\\Tickt\\Tickt\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "F:\\Projeto Tickst\\Tickts\\Domain\\Domain.csproj",
+        "projectPath": "F:\\Projeto Tickst\\Tickt\\Tickt\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Hamil\\.nuget\\packages\\",
-        "outputPath": "F:\\Projeto Tickst\\Tickts\\Domain\\obj\\",
+        "outputPath": "F:\\Projeto Tickst\\Tickt\\Tickt\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hamil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,10 +42,6 @@
               "target": "Package",
               "version": "[10.0.0, )"
             },
-            "Microsoft.AspNet.Identity.EntityFramework": {
-              "target": "Package",
-              "version": "[2.2.3, )"
-            },
             "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -56,15 +52,11 @@
             },
             "Microsoft.AspNetCore.Authorization": {
               "target": "Package",
-              "version": "[3.1.6, )"
-            },
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.1.7, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.6, )"
+              "version": "[3.1.7, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -76,9 +68,9 @@
               "target": "Package",
               "version": "[12.0.3, )"
             },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

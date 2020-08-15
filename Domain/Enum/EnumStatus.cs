@@ -1,4 +1,4 @@
-﻿namespace Tickts.Domain.Enum
+﻿namespace Domain.Enum
 {
     public enum EnumStatus
     {

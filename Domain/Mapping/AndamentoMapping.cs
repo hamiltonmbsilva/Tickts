@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Tickts.Domain.DTO;
-using Tickts.Domain.Models;
+using Domain.DTO;
+using Domain.Models;
 
-namespace Tickts.Domain.Mapping
+namespace Domain.Mapping
 {
     public class AndamentoMapping : Profile
     {

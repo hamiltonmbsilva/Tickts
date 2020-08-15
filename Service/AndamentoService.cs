@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Tickts.Repository.EntyRepository;
+﻿using Repository.EntyRepository;
 
-namespace Tickts.Service
+namespace Service
 {
     public class AndamentoService
     {

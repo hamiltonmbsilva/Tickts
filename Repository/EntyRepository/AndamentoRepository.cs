@@ -1,8 +1,8 @@
-﻿using System.Linq;
-using Tickts.Domain.Models;
-using Tickts.Repository.Context;
+﻿using Domain.Models;
+using Repository.Context;
+using System.Linq;
 
-namespace Tickts.Repository.EntyRepository
+namespace Repository.EntyRepository
 {
     public class AndamentoRepository : Repository<Andamento>
     {
@@ -12,7 +12,7 @@ namespace Tickts.Repository.EntyRepository
 
         public Andamento GetById(int id)
         {
-            return GetAll().FirstOrDefault(x => x.IdAndamento == id);
+            return GetAll().FirstOrDefault(x => x.Id == id);
         }
     }
 }
