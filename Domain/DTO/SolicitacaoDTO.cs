@@ -10,6 +10,7 @@ namespace Domain.DTO
         public DateTime DataCadastro { get; set; }       
         public EnumStatus Status { get; set; }
         public string TextoSolicitacao { get; set; }
+        public string QuantSolicitacao { get; set; }
 
     }
 }

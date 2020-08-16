@@ -8,7 +8,9 @@ namespace Domain.Mapping
     {
         public SolicitacaoMapping()
         {
-            CreateMap<SolicitacaoListDTO, Solicitacao>().ReverseMap();
+            CreateMap<Solicitacao, SolicitacaoListDTO>()
+                .ForMember(dest => dest.QuantSolicitacao, ori => ori.MapFrom(x => x.Andamentos.Count))
+                .ReverseMap();
         }
     }
 }

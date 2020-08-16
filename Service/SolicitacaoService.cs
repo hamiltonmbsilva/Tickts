@@ -18,7 +18,7 @@ namespace Service
         {
             try
             {
-                var todasSolicitacao = _repositorySolicitacao.GetAll();
+                var todasSolicitacao = _repositorySolicitacao.GetAllSolicitacao();
                 return todasSolicitacao;
             }
             catch (Exception ex)
