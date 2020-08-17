@@ -38,6 +38,10 @@ namespace Repository.Migrations
                         .HasColumnName("Solicitacao_id")
                         .HasColumnType("int");
 
+                    b.Property<int>("StatusAndamento")
+                        .HasColumnName("status")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("SolicitacaoId");

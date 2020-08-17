@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Domain.Enum;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,6 +20,7 @@ namespace Domain.Models
         [Required, Column("data_andamento")]
         [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}")]
         public DateTime DataAndamento { get; set; }
+        
         #endregion
 
         #region Relacionamentos

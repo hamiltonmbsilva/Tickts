@@ -154,7 +154,7 @@ namespace Controller.Controllers
                 if (result == null)
                     return BadRequest("Solicitação não encontrado!");
 
-                var SolicitacaoDTO = _mapper.Map<List<SolicitacaoListDTO>>(result);
+                var SolicitacaoDTO = _mapper.Map<SolicitacaoListDTO>(result);
 
                 return Ok(SolicitacaoDTO);
                

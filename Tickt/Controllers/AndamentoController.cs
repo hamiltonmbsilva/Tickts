@@ -72,6 +72,36 @@ namespace Controller.Controllers
             }
         }
 
+        //GET: api/cliente/1        
+        [HttpGet("getAll/{id}")]
+        public ActionResult<Andamento> GetAllId(int id)
+        {
+            try
+            {
+
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var andamento = _serviceAndamento.BuscarTodosPeloId(id);
+
+                if (andamento == null)
+                {
+                    return NotFound();
+                }
+
+                var AndamentoDTO = _mapper.Map<List<AndamentoListDTO>>(andamento);
+
+                return Ok(AndamentoDTO);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         //POST: api/cliente
         [HttpPost]
         public ActionResult<Andamento> Post([FromBody] Andamento andamento)
@@ -128,7 +158,7 @@ namespace Controller.Controllers
                 if (result == null)
                     return BadRequest("Solicitação não encontrado!");
 
-                var AndamentoDTO = _mapper.Map<List<AndamentoListDTO>>(result);
+                var AndamentoDTO = _mapper.Map<AndamentoListDTO>(result);
 
                 return Ok(AndamentoDTO);
 

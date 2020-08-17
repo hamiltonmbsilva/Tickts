@@ -2,6 +2,7 @@
 using Repository.EntyRepository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Service
 {
@@ -35,6 +36,24 @@ namespace Service
                 {
                     var andamento = _repositoryAndamento.GetById(id);
                     return andamento;
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        
+        public IList<Andamento> BuscarTodosPeloId(int id)
+        {
+            try
+            {
+                if (id != 0)
+                {
+                    var andamento = _repositoryAndamento.GetAllId(id);
+                    return andamento.ToList();
                 }
 
                 return null;
